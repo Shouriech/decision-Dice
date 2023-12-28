@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    padding: 2em;
+    margin: 2em;
+}
+
+button {
+    cursor: pointer;
+    
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+
+    box-shadow: 0px 5px 5px black;
+}
+
+#decision-results {
+     padding: 1em;
+     margin: 1em;
+
+     font-size: larger;
+}

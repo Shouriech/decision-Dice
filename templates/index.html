@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>Decision Dice</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Decision Dice</h1>
+        </div>
+
+        <form id="decision-form">
+            <label for="category">Select Category:</label>
+            <select id="category" name="category">
+                <option value="food">Food</option>
+                <option value="activity">Activity</option>
+                <option value="movie">Movie</option>
+                <option value="place">Place</option>
+            </select>
+            <input type="button" value="Roll">
+        </form>
+                
+        <p id="decision-results"></p>
+
+        <div class="custom-options">
+            <h2>Customize Options:</h2>
+            <input type="text" id="custom-option" placeholder="Enter custom option">
+            <button type="button" id="add-option">Add Option</button>
+        </div>
+
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+</body>
+</html>
